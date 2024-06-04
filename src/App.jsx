@@ -3,7 +3,6 @@ import { useState } from 'react';
 import ProjectSideBar from "./components/ProjectSideBar";
 import NewProject from "./components/NewProject";
 import NoProjectSelected from "./components/NoProjectSelected";
-import NoWorkResult from 'postcss/lib/no-work-result';
 import SelectedProject from './components/SelectedProject';
 
 function App() {
@@ -105,7 +104,7 @@ function App() {
         onStartAddProject={handleStartAddProject}
         projects={projectsState.projects}
         onSelectProject={handleSelectProject}
-      
+        selectedProjectId={projectsState.selectedProjectId}
       />
       {content}
     </main>
