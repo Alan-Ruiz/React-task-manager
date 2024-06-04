@@ -7,7 +7,7 @@ export default function NewTask({onAdd}) {
   }
 
   function handleClick() {
-    onAdd(enteredTask)
+    onAdd(enteredTask);
     setEnteredTask('');
   }
 
